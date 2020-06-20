@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+h1{
+    font-family: "Helvetica";
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px grey;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+#input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#btn{
+    height: 35px;
+    border-radius: 5px;
+    background-color: #24a0ed;
+}
+
+.display{
+    margin: 10px;
+    padding: 5px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.error{
+    color: red;
+}

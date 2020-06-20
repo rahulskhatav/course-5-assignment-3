@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Narrow It Down</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="NarrowItDownApp">
+        <h1>Narrow It Down</h1>
+        <div class="container" ng-controller="NarrowItDownController as ctrl">
+            <input type="text" id="input" placeholder="Search Term" ng-model="ctrl.searchTerm">
+            <button type="button" id="btn" ng-click="ctrl.show()">Narrow It Down For Me!</button>
+            <list-display list="ctrl.list" on-remove="ctrl.remove(index)" status="ctrl.status">
+
+            </list-display>
+        </div>
+    </body>
+</html>

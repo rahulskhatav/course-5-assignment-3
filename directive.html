@@ -1,0 +1,12 @@
+<div ng-if="list" class="display">
+    <ol>
+       <li ng-repeat="item in list">
+           ID : {{ item.id }} 
+           <br>Name : {{ item.name }} 
+           <br>Short_Name : {{ item.shortname }}
+           <br>Description : {{ item.descp }}
+           <button ng-click="onRemove({index:$index})">Remove Item</button>
+       </li>
+    </ol>
+</div>
+<div ng-if="status===0" class="error">Nothing found!</div>
